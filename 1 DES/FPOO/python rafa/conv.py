@@ -1,0 +1,26 @@
+print("Digite 1 para converter um número decimal\nDigite 2 para converter um número bínario\nDigite 3 para converter um número octal\nDigite 4 para converter um número hexadecimal")
+a=int(input())
+if a==1:
+    a = int(input("Qual o seu número decimal? "))
+    b = bin(a)
+    c = oct(a)
+    d = hex(a)
+    print(f"Seu número decimal é {a}\nBinário: {b}\nOctal: {c}\nHexadecimal: {d}\n")
+elif a==2:
+    x = input("Qual o seu número binário? ")
+    y = int(x, 2) 
+    z = oct(y)
+    z1 = hex(y)
+    print(f"Seu número binário é {x}\nDecimal: {y}\nOctal: {z}\nHex: {z1}\n")
+elif a==3:
+    a1 = input("Qual seu número octal?")
+    a2 = int(a1, 8)
+    a3 = bin(a2)
+    a4 = hex(a2)
+    print(f"Seu número octal é {a1}\nDecimal: {a2}\nBinário: {a3}\nHexadecimal: {a4}\n")
+else:
+    b1 = input("Qual seu número hexadecimal? ")
+    b2 = int(b1, 16)
+    b3 = bin(b2)
+    b4 = oct(b2)
+    print(f"Seu número hexadecimal é {b1}\nDecimal: {b2}\nBinário: {b3}\nOctal: {b4}")

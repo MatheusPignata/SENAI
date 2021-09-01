@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <label for="nome">Nome completo</label>"
+        <input type="text" name="nome" placeholder="Nome completo"><br ><br>
+        <label for="senha">Senha</label>
+        <input type="password" minlength="8" name="senha" placeholder="Informe uma senha"><br ><br>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" placeholder="Informe seu email"><br><br>        
+        <label for="date">Data de nascimento</label>
+        <input type="date" name="nascimento" min="2000-01-01"><br ><br>
+        
+        <fieldset>
+        <legend>Como nos conheceu?</legend>
+        <input type="radio" name="font" id="google" value="google"> 
+        <label for="google">Google</label><br><br>
+        <input type="radio" name="font" id="facebook" value="facebook">
+        <label for="facebook">Facebook</label><br><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <input type="checkbox" name="fumante" value="f">
+            <label for="fumante">Fumante</label><br>
+            <input type="checkbox" name="esporte" value="e">
+            <label for="esporte">Pratica esporte</label><br>
+            <input type="checkbox" name="ingles" value="i">
+            <label for="ingle">Fala ingles</label><br>
+        </fieldset>
+
+        <input type="submit" value="Salvar">
+    </form>
+</body>
+</html>

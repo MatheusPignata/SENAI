@@ -1,0 +1,32 @@
+body{
+    background-image: url(../img/fundo2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 0;
+    background-color: rgb(82, 80, 80);
+    overflow: auto;
+}
+
+@media screen and (min-width: 1600px){
+th{font-size: 30px;}
+
+.tdletra{font-size: 25px;}
+
+.tdimg{height: 200px; width: 200px;}
+
+#logo{height: 70px; width: 470px;}
+
+#coiso{font-size: 25px;}
+}
+
+    @media screen and (max-width: 1599px){
+        th{font-size: 20px;}
+
+        .tdletra{font-size: 16px;}
+        
+        .tdimg{height: 133px; width: 133px;}
+        
+        #logo{height: 46px; width: 313px;}
+        
+        #coiso{font-size: 16px;}
+    }

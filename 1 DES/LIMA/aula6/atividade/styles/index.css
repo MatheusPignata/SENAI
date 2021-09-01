@@ -1,0 +1,218 @@
+html, body, ul{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-image: url("../img/fundo.jpg");
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+}
+
+.header{
+    display: flex;    
+    background-color: #0c0c0c;
+    justify-content:space-between;
+    padding-bottom: 10px;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin:5px 10px 0 10px;
+}
+
+.busca{
+    width:20%;
+    position: relative;
+    height: 50px;
+  }
+
+input {
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 50px;
+    width: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: none;
+    z-index: 3;
+    transition: width 1s ease-out;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+input:focus { 
+    border: 1px solid #fbc559;
+    border-radius: 25px;
+    width: 100%;
+    z-index: 1;
+    transition: width 1s ease-in;
+    background: #fbc559;
+  }
+
+.button { 
+    height: 50px;
+    width: 50px;
+    background:  url('lupa.png')  center no-repeat;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+.button:focus {
+    outline: none;
+  }
+
+.login {
+    color: #fbc559;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px;
+}
+
+.topnav{
+    display: flex;
+    justify-content:space-around;
+    background-color: #fbc559;
+}
+
+.topnav a{
+    color: #000000;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover{
+    background-color: #ffdc97;
+    color: #000000;
+}
+
+.grid {
+	grid-template-rows: 350px 70px 350px 70px;
+  display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+  max-width: 400px;
+  margin: 0 20%;
+}
+
+.item {
+	margin: 5px;
+	background: #727272;
+	text-align:center;
+	font-size: 20px;
+}
+
+.produto{
+  height: 300px;
+  width: 300px;
+  font-size: 40px;
+}
+
+.valor{
+  margin: 5px;
+  background: #dfdfdf;
+  font-size: 25px;
+  text-align: center;
+}
+
+.tabela{
+  padding-left: 10px;
+  border: solid 1px;
+  margin-top: 5px;
+  height: 180px;
+  padding-right: 20px;
+}
+
+.filtros {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  padding-top: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.filtros input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #0c0c0c;
+}
+
+.filtros:hover input ~ .checkmark {
+  background-color: #ffdc97;
+}
+
+.filtros input:checked ~ .checkmark {
+  background-color: #fbc559;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.filtros input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.filtros .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #0c0c0c;
+  border-width: 0 3px 3px 0; 
+  transform: rotate(45deg);
+}
+
+.meio{
+  display:flex;
+}
+
+.footer {
+  bottom:0;
+  margin-top: 30px;
+  width:100%;
+  height: 60px;
+  background-color: #0c0c0c;
+  display: flex;
+  flex-direction: column;
+}
+
+.linha {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu {
+  margin: 5px;
+  text-align: center;
+  font-size: 15px;
+  color: #fbc559;
+}
+.menu:hover {
+  background-color:#fbc559;
+  color: #0c0c0c;
+}

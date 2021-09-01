@@ -1,0 +1,31 @@
+<html> Página
+	<head> Cabeçalho da página
+		<meta charset="utf-8"/>
+			#colocar os acentos
+
+		<meta http-equiv="refresh" content="10"/>
+			#recarregar a pg a cada x segundos
+
+		<link rel="sortcut icon" href="imagem.png"/>
+			#trocar o icone da pg
+	<corpo> Corpo da página
+
+<ul> Lista desordenada
+	<li> Linha listrada
+
+<ol> Lista ordenada
+	<li> Linha listrada
+
+<table> Tavela
+	<thead> Cabeçalho da tabela
+		<tr> Linha Tabela
+		<th> Coluna do cabeçalho
+
+	<tbody> Corpo da tabela
+		<tr> Linha Tabela
+		<td> Coluna da Tabela 
+
+	<tfoot> Rodapé da tabela
+		<tr> Linha Tabela
+		<td> Coluna da Tabela 
+

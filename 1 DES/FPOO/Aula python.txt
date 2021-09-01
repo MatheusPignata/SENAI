@@ -1,0 +1,8 @@
+Aula1
+Tipos de variavéis
+	Int - numérico (numeros inteiros)
+	Float - numérico decimal (numeros quebrados)
+	String - texto
+	Char - caractere
+Para comentar uma linha se utiliza #
+Para comentar multiplas linhas se usa ''' no começo e no final das instruções

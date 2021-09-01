@@ -1,0 +1,21 @@
+body{
+    background-image: url('fundo.jpg');
+}
+
+div{
+    border: solid 2px #fff;
+    border-radius: 5px;
+    width: 5%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    margin: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    align-self: center;
+    color: #fff
+}

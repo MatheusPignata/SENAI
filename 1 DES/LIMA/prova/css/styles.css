@@ -1,0 +1,102 @@
+body{
+    font-size: 20px;
+    background-color: #eeeeee;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #757575;
+    margin: 30px;
+}
+.info{
+    margin-top: 40px;
+   font-weight: bold;
+}
+
+.val1{
+    margin-top: 40px;
+    color: rgb(190, 0, 0);
+}
+
+.val2{
+    margin-top: 40px;
+    color: rgb(1, 173, 1);
+}
+
+.val3{
+    margin-top: 40px;
+    color: rgb(1, 171, 187);
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    padding-left: 20%;
+    padding-right: 30%;
+}
+
+.busca{
+    background-color:#acacac;
+    border:solid 1px;
+    border-radius:15px;
+    width:300px;
+    height:30px;
+    margin-top: 30px;
+  }
+  
+  .txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:14px;
+    border:none;
+    height:32px;
+    width:260px;
+  }
+
+  .lupa{
+      height: 25px;
+      width: 25px;
+      padding-top: 3px; 
+  }
+.corpo{
+    display: flex;
+    justify-content: space-between;
+}
+  .grid {  
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    padding-left: 10%;
+}
+.imgnot{
+    height: 205px;
+    width: 300px;
+    padding: 15px;
+}
+.noticia{
+    display:flex;
+    width: 350px;
+    flex-direction: column;
+}
+p{
+    font-size:12px;
+}
+.manchetes{
+    
+    background-color: white;
+    height: 45%;
+    margin-right: 25%;
+}
+.titulo{
+    border-bottom: 1px solid rgb(87, 87, 87);
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px
+}
+.tema{
+    border-bottom: 1px solid rgb(87, 87, 87);
+    margin: 30px;
+    padding-bottom: 20px;
+}

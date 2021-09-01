@@ -1,0 +1,16 @@
+site para wireframe: draw.io
+
+
+Filmes/series:
+	O dilema das redes sociais
+	A rede social
+	Jobs
+	Piratas  do Vale do Silicio
+	Mr. Robot
+	Estagiários
+	O jogo da imitação
+
+Links:
+https://www.programiz.com/python-programming/online-compiler/
+https://repl.it/languages/python3
+https://www.jdoodle.com/python3-programming-online/

@@ -1,0 +1,13 @@
+body {
+    background-image: url('padrão.jpg');
+}
+
+.titulo {
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(0, 255, 64);
+}
+span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
