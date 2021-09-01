@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="nome" placeholder="Digite o nome">
+    <input type="number" id="cpf" placeholder="Digite o CPF">
+    <input type="text" id="turma" placeholder="Digite a turma">
+    <button class="btn_cadastrar" onclick="cadastrar()">Cadastrar</button>
+    <br>
+    <input type="text" onkeyup="buscar()" id="busca" placeholder="Buscar">
+    <br>
+
+    <table>
+        <thead class="tbl-header">
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Turma</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="data" class="tbl-content">
+            <tr>
+                <td>Jose Maria</td>
+                <td>111.111.111/11</td>
+                <td>1 DES</td>
+                <td><button class="btn_apagar" onclick="apagarButton(this)">Apagar</button></td>
+            </tr>
+            <tr>
+                <td>Ana Lucia</td>
+                <td>111.111.111/11</td>
+                <td>1 DES</td>
+                <td><button class="btn_apagar" onclick="apagarButton(this)">Apagar</button></td>
+            </tr>
+            <tr>
+                <td>Pedro Silva</td>
+                <td>111.111.111/11</td>
+                <td>1 DES</td>
+                <td><button class="btn_apagar" onclick="apagarButton(this)">Apagar</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+<script src="index.js"></script>
+
+</html>

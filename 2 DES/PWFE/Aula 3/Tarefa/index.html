@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Aula3</title>
+</head>
+
+<body>
+
+    <div>
+        <h3 class="titulo">Buscar</h3>
+        <input type="text" id="busca" onkeyup="buscar()">
+
+        <h3 class="titulo">Cadastrar</h3>
+        <input type="text" id="cadastro" placeholder="Jogo">
+        <input type="text" id="cadastro" placeholder="Plataforma">
+        <input type="number" id="cadastro" placeholder="Valor">
+        <button id="Enviar" onclick="cadastrar()">Enviar</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="titulo">Jogo</th>
+                    <th class="titulo">Plataforma</th>
+                    <th class="titulo">Valor</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>

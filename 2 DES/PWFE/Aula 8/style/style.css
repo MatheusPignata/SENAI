@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+}
+
+.memory-game {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 350px 350px;
+    margin-top: 2%;
+}
+
+.card{
+    background-image: url(../img/ponto.png);
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.head button {
+    width: 200px;
+    height: 30px;
+    margin: 10% 10px 0;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #fff;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 26px;
+    color: #fff;
+    margin-top: 2%;
+}

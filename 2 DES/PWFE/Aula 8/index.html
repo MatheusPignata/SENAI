@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Memory Game</title>
+</head>
+
+<body onload="shuffle()">
+
+    <div class="head">
+        <button type="button" onclick="shuffle()">Shuffle</button>
+        <button type="button" onclick="showAll()">Show All</button>
+        <button type="button" onclick="hideAll()">Hide All</button>
+    </div>
+
+    <h3></h3>
+
+    <div class="memory-game">
+        <button class="card" type="button" id="btn1" onclick= "play(this)"></button>
+        <button class="card" type="button" id="btn2" onclick= "play(this)"></button>
+        <button class="card" type="button" id="btn3" onclick= "play(this)"></button>
+        <button class="card" type="button" id="btn4" onclick= "play(this)"></button>
+        <button class="card" type="button" id="btn5" onclick= "play(this)"></button>
+        <button class="card" type="button" id="btn6" onclick= "play(this)"></button>
+        <button class="card" type="button" id="btn7" onclick= "play(this)"></button>
+        <button class="card" type="button" id="btn8" onclick= "play(this)"></button>
+    </div>
+</body>
+
+<script src="script/script.js"></script>
+
+</html>

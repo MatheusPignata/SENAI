@@ -1,0 +1,24 @@
+body {
+    background: linear-gradient(45deg, #bebebe 35%, #dfdfdf 35%);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 921px;
+}
+
+.titulo {
+    font-size: 20px;
+}
+
+#cadastro {
+    margin-bottom: 15px;
+}
+
+#tablebody>tr>td {
+    padding: 20px 100px 0 0;
+    border-bottom: solid 1px #000;
+}
+
+input {
+    outline: none;
+}

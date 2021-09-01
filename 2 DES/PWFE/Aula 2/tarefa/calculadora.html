@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="square">
+
+        <h1>Mini Calculator</h1>
+
+        <div class="inputs">
+            <input type="number" id="valor1" class="input" placeholder="Value 1"><br>
+            <input type="number" id="valor2" class="input" placeholder="Value 2"><br>
+        </div>
+
+        <div class="butons">
+            <button onclick="soma()" class="soma" id="btn">+</button>
+            <button onclick="subtracao()" class="subtracao" id="btn">-</button>
+            <button onclick="multiplicacao()" class="multiplicacao" id="btn">*</button>
+            <button onclick="divisao()" class="divisao" id="btn">/</button>
+            <button onclick="porcentagem()" class="porcentagem" id="btn">%</button>
+            <button onclick="potencia()" class="potenciacao" id="btn">**</button>
+            <button onclick="clean()" id="btnclean" class="btn">Clean</button>
+        </div>
+
+        <h1 id="resultado"></h1>
+
+    </div>
+
+    <div><img src="logopb.png" class="logo"></div>
+
+</body>
+
+<script src="calculadora.js"></script>
+
+</html>

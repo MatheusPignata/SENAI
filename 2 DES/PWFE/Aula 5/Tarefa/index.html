@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/motoboy.png">
+    <title>Lanchonete</title>
+</head>
+
+<body>
+    <div class="cadastro">
+        <input type="text" id="nome" placeholder="Nome do Cliente">
+        <input type="text" id="endereco" placeholder="Endereço do Cliente">
+        <select name="lanche" id="lanche">
+            <option value="" disabled selected>Escolha o Lanche</option>
+            <option value="X-Burguer">X-Burguer</option>
+            <option value="X-Salada">X-Salada</option>
+            <option value="X-Egg">X-Egg</option>
+            <option value="X-Tudo">X-Tudo</option>
+        </select>
+        <div class="botoes">
+            <button onclick="adicionar()" class="btn_add">Adicionar Pedido</button>
+            <button onclick="gerarDados()" class="btn_dados">Gerar Dados Aleatórios</button>
+        </div>
+
+    </div>
+
+    <div class="titles">
+        <h1>Pedidos em Produção</h1>
+        <h1>Pedidos em Entrega</h1>
+    </div>
+
+    <div class="meio">
+
+        <div class="producao">
+            <div class="pedido">
+                <div class="cliente">
+                    <p class="nome">Fulano da Silva</p>
+                    <p class="endereco">Rua dos Sabias, 321</p>
+                    <p class="hora">8:40</p>
+                </div>
+                <p class="lanche">X-Tudo</p>
+                <button onclick="passarPraLa(this)" class="btn"><img src="img/motoboy.png" class="img"></button>
+            </div>
+        </div>
+
+        <div class="entrega">
+            <div class="pedido">
+                <div class="cliente">
+                    <p class="nome">Ciclano de Souza</p>
+                    <p class="endereco">Rua de Asfalto, 123</p>
+                    <p class="hora">8:35</p>
+                </div>
+                <p class="lanche">X-Salada</p>
+                <button onclick="apagar(this)" class="btn"><img src="img/checkmark.png" class="img"></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
