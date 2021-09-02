@@ -18,13 +18,6 @@ public class Livros {
 		this.titulo = vetor[2];
 		this.preco = Float.valueOf(vetor[3]);
 	}
-
-	public Livros(int id, String autor, String titulo, float preco) {
-		this.id = id;
-		this.autor = autor;
-		this.titulo = titulo;
-		this.preco = preco;
-	}
 	
 	public Livros(String id, String autor, String titulo, String preco) {
 		this.id = Integer.valueOf(id);
@@ -88,7 +81,7 @@ public class Livros {
 	}
 	
 	public String toHTML() {
-		return "</td><td>" + id + "</td><td>" + autor + "</td><td>" + titulo + "</td><td>" + preco + "</td><td>";
+		return "<tr><td>" + id + "</td><td>" + autor + "</td><td>" + titulo + "</td><td>" + preco + "</td></tr>";
 	}
 	
 	
