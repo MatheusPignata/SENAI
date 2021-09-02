@@ -81,7 +81,7 @@ public class Livros {
 	}
 	
 	public String toHTML() {
-		return "<tr><td>" + id + "</td><td>" + autor + "</td><td>" + titulo + "</td><td>" + preco + "</td></tr>";
+		return "<td>" + id + "</td><td>" + autor + "</td><td>" + titulo + "</td><td>" + preco + "</td>";
 	}
 	
 	

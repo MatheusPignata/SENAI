@@ -47,6 +47,7 @@
 					<th>Autor</th>
 					<th>Titulo</th>
 					<th>Preço</th>
+					<th>Ações</th>
 				</tr>
 			</thead>
 			
@@ -54,7 +55,10 @@
 				LivrosProcess.abrir();
 				out.print("<tbody class='tablebody'");
 				for (Livros l : LivrosProcess.livros){
+					out.print("<tr>");
 					out.print(l.toHTML());
+					out.print("<td><button type='submit'>Delete</button></td>");
+					out.print("</tr>");
 				}
 				out.print("</table");
 			%>
