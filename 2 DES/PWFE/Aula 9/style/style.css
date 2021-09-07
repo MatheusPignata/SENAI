@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+}
+
+h1 {
+    color: #fff;
+    margin-top: 5%;
+}
+
+h3 {
+    color: #fff;
+    margin-top: 5%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    margin-top: 10%;
+}
+
+.btn_game {
+    padding: 50px;
+    font-size: 50px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: none
+}
+
+#a1 {
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+#a2 {
+    border-bottom: 2px solid #fff;
+}
+
+#a3 {
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+#b1 {
+    border-right: 2px solid #fff;
+}
+
+#b3 {
+    border-left: 2px solid #fff;
+}
+
+#c1 {
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+
+#c2 {
+    border-top: 2px solid #fff;
+}
+
+#c3 {
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+.btn_reset {
+    margin-top: 2%;
+    font-size: 25px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1)
+}
