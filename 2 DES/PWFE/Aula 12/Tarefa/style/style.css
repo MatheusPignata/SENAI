@@ -1,0 +1,15 @@
+.meio {
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 250px 250px 250px 250px;
+    align-items: center;
+}
+
+.filme {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    height: 150px
+}
