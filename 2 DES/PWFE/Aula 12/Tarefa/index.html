@@ -10,12 +10,16 @@
 </head>
 
 <body>
+    <div class="header">
+        <input type="file" id="doc" onChange="loadData(this)">
+        <h1 style="color: white">Cinemão do Reenye</h1>
+        <input type="text" id="busca" onkeyup="buscar()">
+    </div>
 
-    <input type="file" onChange="loadData(this)">
-    <input type="text" id="busca" onkeyup="buscar()">
-    <button type="submit" id="busca" onclick="buscar()">.</button>
+    <div class="nav">
+        <div class=meio></div>
+    </div>
 
-    <div class=meio></div>
 
 </body>
 <script src="script/script.js"></script>

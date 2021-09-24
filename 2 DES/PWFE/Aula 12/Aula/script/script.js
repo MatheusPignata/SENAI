@@ -58,6 +58,5 @@ function buscar() {
         } else {
             rows[i].parentNode.style.display = "none";
         }
-
     }
 }
