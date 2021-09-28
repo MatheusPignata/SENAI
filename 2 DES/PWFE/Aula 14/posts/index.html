@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Home</title>
+    <title>Posts</title>
 </head>
 <body>
-
     <div class="nav">
         <ul>
             <li onclick="toAlbuns()">Albuns</li>
@@ -20,8 +19,11 @@
 
     <div class="list">
         <div class="item model">
-            <p id="title"></p>
-            <input type="checkbox" id="completed"/>
+            <span onClick="excludePost(this)">
+                <img src="https://freepngimg.com/thumb/trash_can/164889-bin-trash-free-transparent-image-hq.png" class="trash"/>
+            </span>
+            <h3 id="title"></h3>
+            <p id="post"></p>
         </div>
     </div>
     

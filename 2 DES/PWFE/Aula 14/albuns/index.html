@@ -5,15 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Albuns</title>
 </head>
 <body>
     <div class="nav">
         <ul>
-            <li>Albuns</li>
-            <li>Posts</li>
+            <li onclick="toAlbuns()">Albuns</li>
+            <li onclick="toPosts()">Posts</li>
+            <li onclick="toHome()">Home</li>
         </ul>
         <p id="username"></p>
+    </div>
+    <div class="albuns">
+        <div class="album model">
+            <h4>Titulo Album</h4>
+        </div>
+    </div>
+
+    <div class="modal model">
+        <div class="photos">
+            <span onClick="closeModal()">
+                <img src="https://cdn-icons-png.flaticon.com/512/106/106830.png" />
+            </span>
+            <div class="lista">
+
+            </div>
+        </div>
     </div>
 </body>
 <script src="index.js"></script>

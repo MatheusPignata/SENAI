@@ -45,12 +45,11 @@ li{
 
 .item{
     width: 40vw;
-    height: 10vh;
+    height: 20vh;
     border: 1px solid rgba(0,0,0,0.3);
     border-radius: 6px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 0 15px;
     margin-top: 10px;
     background-color: #fff;
@@ -64,4 +63,18 @@ li{
 .model{
     display: none;
     visibility: hidden;
+}
+
+#title{
+    margin-bottom: 20px;
+}
+
+span{
+    display:flex;
+    justify-content: right;
+    margin: 10px;
+}
+
+.trash{
+    width: 30px;
 }

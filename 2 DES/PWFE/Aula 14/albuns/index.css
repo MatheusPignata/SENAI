@@ -10,6 +10,7 @@
 body{
     width: 100vw;
     height: 100vh;
+    background-color: #9c22dd3d;
 }
 
 .nav{
@@ -32,4 +33,76 @@ li{
     float: left;
     margin-left: 10px;
     cursor: pointer;
+}
+
+.albuns{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.album{
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .5px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.model{
+    visibility: hidden;
+    display: none;
+}
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photos{
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.photos>span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 2%;
+    cursor: pointer;
+}
+
+.photos>span>img{
+    width: 30px;
+}
+
+.lista{
+    width: 95%;
+    height: 90%;
+    overflow-y: scroll;
+    margin-bottom: 15px;
 }
