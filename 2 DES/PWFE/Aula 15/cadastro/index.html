@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="header">
+        <div>
+            <p onclick="toCadastro()">Cadastro de Livros</p>
+            <p onclick="toLista()">Lista de Livros</p>
+        </div>
+        <h2>Livraria Das Paginas</h2>
+    </div>
+
+    <form>
+        <input type="number" id="id" placeholder="Id">
+        <input type="text" id="titulo" placeholder="Titulo">
+        <input type="text" id="autor" placeholder="Autor">
+        <input type="text" id="editora" placeholder="Editora">
+        <input type="text" id="idioma" placeholder="Idioma">
+        <input type="text" id="img" placeholder="URL da capa">
+        <input type="date" id="lancamento" placeholder="Lancamento">
+        <input type="number" id="paginas" placeholder="Numero de paginas">
+        <input type="number" id="estoque" placeholder="Quantidade no estoque">
+        <input type="number" id="preco" placeholder="Preço">
+    </form>
+    <button onclick="newBook()">Cadastrar</button>
+
+</body>
+<script src="index.js"></script>
+</html>

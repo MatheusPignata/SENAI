@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let url = "http://10.87.207.2:8080/api/livros";
+
+    let obj = {
+        "id": 41,
+        "titulo": "Diario de um Banana",
+        "autor": "Jeff Kinney",
+        "editora": "V & R",
+        "idioma": "Português",
+        "urlImagem": "https://m.media-amazon.com/images/I/618iHJVMh4L.jpg",
+        "lancamento": "0015-07-31T03:00:00.000+00:00",
+        "numeroPaginas": 152,
+        "estoque": 10,
+        "preco": 10.3
+    }
+    
+    fetch(url,{
+        method: "POST",
+        body: JSON.stringfy(obj)
+    }).then(res => {
+        return res.json()
+    }).then(data =>{
+        console.log(data);
+    }).catch(err => {
+        console.log(err);
+    })
+</script>
+</html>
