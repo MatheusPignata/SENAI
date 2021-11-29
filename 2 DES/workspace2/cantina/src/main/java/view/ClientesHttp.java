@@ -8,19 +8,18 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import controller.AlunoProcess;
+import controller.ClientesProcess;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import model.Aluno;
+import model.Clientes;
 
-@WebServlet("/aluno")
-public class AlunoHttp extends HttpServlet{
+@WebServlet("/clientes")
+public class ClientesHttp extends HttpServlet{
 	
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
 		PrintWriter pw = resp.getWriter();
 		
 		String body = req.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
@@ -29,20 +28,18 @@ public class AlunoHttp extends HttpServlet{
 			JSONObject obj = new JSONObject(body);
 			
 			String nome = obj.getString("nome");
-			float peso = obj.getFloat("peso");
-			float altura = obj.getFloat("altura");
-			int nascimento = obj.getInt("nascimento");
+			float valor = obj.getFloat("valor");
+			String status = obj.getString("status");
 			
-			Aluno a = new Aluno();
-			a.setNome(nome);
-			a.setPeso(peso);
-			a.setAltura(altura);
-			a.setNascimento(nascimento);
+			Clientes c = new Clientes();
+			c.setNome(nome);
+			c.setValor(valor);
+			c.setStatus(status);
 			
-			AlunoProcess ap = new AlunoProcess();
+			ClientesProcess cp = new ClientesProcess();
 			
-			if(ap.create(a) == true) {
-				obj.put("id", a.getId());
+			if(cp.create(c) == true) {
+				obj.put("id", c.getId());
 				pw.write(obj.toString());
 			}else {
 				resp.setStatus(401);
@@ -51,20 +48,16 @@ public class AlunoHttp extends HttpServlet{
 		}catch(JSONException e){
 			e.printStackTrace();
 		}
-		
-		
 	}
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		PrintWriter pw = resp.getWriter();		
-		AlunoProcess ap = new AlunoProcess();
+		ClientesProcess cp = new ClientesProcess();
 		
-		JSONArray arr = ap.readAll();
+		JSONArray arr = cp.readAll();
 		
 		pw.write(arr.toString());
-		
-		//pw.write(ap.readAll().toString());
-		}
+	}
 	
 	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		PrintWriter pw = resp.getWriter();
@@ -76,23 +69,16 @@ public class AlunoHttp extends HttpServlet{
 		try {
 			JSONObject obj = new JSONObject(body);
 			
-			Aluno a = new Aluno();
+			Clientes c = new Clientes();
 			
-			a.setId(obj.getInt("id"));
-			a.setNome(obj.getString("nome"));
-			a.setAltura(obj.getFloat("altura"));
-			a.setPeso(obj.getFloat("peso"));
-			a.setNascimento(obj.getInt("nascimento"));
+			c.setId(obj.getInt("id"));
+			c.setNome(obj.getString("nome"));
+			c.setValor(obj.getFloat("valor"));
+			c.setStatus(obj.getString("status"));
 			
-			AlunoProcess ap = new AlunoProcess();
+			ClientesProcess cp = new ClientesProcess();
 			
-			/*if(ap.update(a) == true) {
-				pw.write(obj.toString());
-			}else {
-				resp.setStatus(401);
-			}*/
-			
-			String ret = ap.update(a);
+			String ret = cp.update(c);
 			
 			if(ret.equals("sucesso")) {
 				pw.write(obj.toString());
@@ -114,7 +100,7 @@ public class AlunoHttp extends HttpServlet{
 		
 		int id = Integer.parseInt(tempId);
 		
-		AlunoProcess ap = new AlunoProcess();
+		ClientesProcess ap = new ClientesProcess();
 		
 		if(ap.delete(id) == true) {
 			pw.write("{'id':" + id + "}");
