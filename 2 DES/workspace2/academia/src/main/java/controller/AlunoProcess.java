@@ -19,14 +19,24 @@ public class AlunoProcess {
 		this.con = new ConnectionDB().getConnection();
 	}
 	
-	public JSONArray readAll() {
+	public JSONArray readAll(int id) {
 		JSONArray arr = new JSONArray();
+		
+		System.out.println(id);
 		
 		String query = "SELECT * FROM aluno";
 		
+		if(id > 0) {
+			query +="  WHERE id = ?";
+		}
+		
 		try {
 			PreparedStatement ps = con.prepareStatement(query);
-			
+
+			 if(id > 0) {
+				 ps.setInt(1, id);
+			 }
+			 
 			 rs = ps.executeQuery();
 			 
 			 while(rs.next()) {
@@ -37,6 +47,12 @@ public class AlunoProcess {
 				 obj.put("peso", rs.getFloat(3));
 				 obj.put("altura", rs.getFloat(4));
 				 obj.put("nascimento", rs.getInt(5));
+				 
+				 Aluno a = new Aluno();
+				 a.setAltura(obj.getFloat("altura"));
+				 a.setPeso(obj.getFloat("peso"));
+				 
+				 obj.put("imc", a.calcularImc());
 				 
 				 arr.put(obj);
 			 }

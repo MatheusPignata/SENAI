@@ -59,12 +59,20 @@ public class AlunoHttp extends HttpServlet{
 		PrintWriter pw = resp.getWriter();		
 		AlunoProcess ap = new AlunoProcess();
 		
-		JSONArray arr = ap.readAll();
+		String tempId = req.getParameter("id");
+		
+		int id = 0;
+		
+		if(tempId != null) {
+			id = Integer.parseInt(tempId);
+		}
+		
+		JSONArray arr = ap.readAll(id);
 		
 		pw.write(arr.toString());
 		
 		//pw.write(ap.readAll().toString());
-		}
+	}
 	
 	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		PrintWriter pw = resp.getWriter();
