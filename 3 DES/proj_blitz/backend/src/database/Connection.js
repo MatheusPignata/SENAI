@@ -5,7 +5,7 @@ const Usuario = require('../model/Usuario');
 const Alerta = require('../model/Alerta');
 const Localizacao = require('../model/Localizacao');
 
-const sequelize = new Sequelize(process.env.DATABASE, process.env.USER,'', {
+const sequelize = new Sequelize(process.env.DATABASE, process.env.USER, '', {
     host: process.env.HOST,
     dialect: 'mysql',
     define: {
@@ -22,7 +22,7 @@ const sync = () => {
     Alerta.associate(sequelize.models);
     Localizacao.associate(sequelize.models);
 
-    sequelize.sync({force: false});
+    sequelize.sync({ force : false });
 }
 
 module.exports = {

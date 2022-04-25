@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../global/checklogin.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="inicializar()">
+    <div class="container">
+        <header>
+            <img src="../assets/menu.png" id="iconMenu" onclick="showMenu()" alt="Menu">
+            <img src="../assets/logo.png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="../usuario/">Configurações</a></li>
+                <li><a onclick="logout()">Sair</a></li>
+            </ul>
+        </header>
+        <div class="map"></div>
+    </div>
+
+    <div class="menu">
+        <span onclick="closeMenu()">
+            <img src="../assets/close.png" alt="Fechar">
+        </span>
+        <ul>
+            <li><a href="../usuario/">Configurações</a></li>
+            <li><a onclick="logout()">Sair</a></li>
+        </ul>
+    </div>
+
+    <div class="modal" hidden>
+        <div class="form-modal">
+            <span onclick="closeModal()" id="closeButton">
+                <img src="../assets/close.png" alt="Fechar">
+            </span>
+            <select id="alerta">
+            </select>
+            <button id="cadastrar" onclick="cadastro()">Cadastrar Alerta</button>
+        </div>
+    </div>
+</body>
+<script src="../global/functions.js"></script>
+<script src="./script.js"></script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwFvsTihI2lykXOj7uPgT08bfsnXXmVtk&callback=initMap&v=weekly"
+    async
+></script>
+</html>

@@ -1,21 +1,21 @@
-const {Model, DataTypes} =  require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 
-class Alerta extends Model{
-    static init(datacon){
-        super.init (
+class Alerta extends Model {
+    static init(datacon) {
+        super.init(
             {
-                tipo:{
+                tipo: {
                     type: DataTypes.STRING(50),
                     allowNull: false,
                 },
-                duracao:{
+                duracao: {
                     type: DataTypes.INTEGER,
                     allowNull: false,
                 },
-                descricao:{
+                descricao: {
                     type: DataTypes.STRING(150),
                     allowNull: true,
-                }
+                },
             },
             {
                 sequelize: datacon,
@@ -26,7 +26,7 @@ class Alerta extends Model{
     }
 
     static associate(models) {
-        Alerta.hasMany(models.localizacao, {foreignKey: 'id_alerta'});
+        Alerta.hasMany(models.localizacao, { foreignKey: 'id_alerta' });
     }
 }
 

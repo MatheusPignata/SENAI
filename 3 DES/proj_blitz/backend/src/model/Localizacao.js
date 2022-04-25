@@ -1,11 +1,11 @@
-const {Model, DataTypes} =  require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 
-class Localizacao extends Model{
-    static init(datacon){
-        super.init (
+class Localizacao extends Model {
+    static init(datacon) {
+        super.init(
             {
                 coordenadas: {
-                    type: DataTypes.STRING(25),
+                    type: DataTypes.STRING(70),
                     allowNull: false,
                 },
                 id_user: {
@@ -38,8 +38,8 @@ class Localizacao extends Model{
     }
 
     static associate(models) {
-        Localizacao.belongsTo(models.usuario, {foreignKey: 'id_user'});
-        Localizacao.belongsTo(models.alerta, {foreignKey: 'id_alerta'});
+        Localizacao.belongsTo(models.usuario, { foreignKey: 'id_user' });
+        Localizacao.belongsTo(models.alerta, { foreignKey: 'id_alerta' });
     }
 }
 

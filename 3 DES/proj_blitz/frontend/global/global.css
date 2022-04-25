@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+html {
+    --background-color: whitesmoke;
+    --base-color: #1565c0;
+
+    --padding-default: .75rem;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    width: 100vw;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    background-color: rgba(255,255,255,.2);
+}
+
+header > ul {
+    list-style: none;
+}
+
+header > ul > li {
+    float: left;
+    margin-left: 15px;
+}
+
+header > ul > li > a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.menu > ul {
+    margin-top: 5rem;
+    list-style: none;
+}
+
+.menu > ul > li {
+    margin: 25px;
+}
+
+.menu > span {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;    
+    background: linear-gradient(to right, #b92b27, var(--base-color));
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+}
+
+.avatar {
+    width: 170px;
+    height: 170px;
+}
+
+input[type="text"], input[type="password"] {
+    border: .1rem solid var(--base-color);
+    padding: var(--padding-default);
+    border-radius: 10px;
+    outline: none;
+    margin-top: 15px;
+}
+
+select {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    padding: var(--padding-default);
+    border-radius: 10px;
+    width: 100px;
+    background-color: var(--base-color);
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -50vw;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 1);
+    transition: all .2s;
+}
+
+header > #iconMenu {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    header > #iconMenu {
+        display: block;
+    }
+
+    header > ul {
+        display: none;
+    }
+}
