@@ -1,0 +1,16 @@
+npm init -- só da enter
+
+dependencias:
+cors
+dotenv
+express
+mysql2
+nodemon
+
+npm i cors dotenv express mysql2 nodemon -- instala todas as dependencias
+
+criar arquivo index.js
+
+criar arquivo .env
+
+criar arquivo connection.js

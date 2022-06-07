@@ -1,0 +1,8 @@
+Diagrama Entidade-Relacionamento (DER)
+Diagrama de atividades de inclusão de salgado
+Banco de Dados e importação dos dados	
+Tela de acesso
+Tela para de listagem das avalaiações
+Recurso para listage das avaliações
+Recurso para cadatrar avaliação 
+Recurso para cadastrar salgados
