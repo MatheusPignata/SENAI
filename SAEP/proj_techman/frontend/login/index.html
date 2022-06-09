@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <img src="../img/Imagens_Icones/techman.png" class="logo">
+
+    <div class="painel">
+
+        <form name="painel">
+            <div class="valor">
+                <input type="text" name="txt" id="pw" maxlength="6" disabled>
+            </div>
+            
+            <div class="teclado">
+                <div class="btn" onclick="painel.txt.value+='1'">1</div>
+                <div class="btn" onclick="painel.txt.value+='2'">2</div>
+                <div class="btn" onclick="painel.txt.value+='3'">3</div>
+                <div class="btn" onclick="painel.txt.value+='4'">4</div>
+                <div class="btn" onclick="painel.txt.value+='5'">5</div>
+                <div class="btn" onclick="painel.txt.value+='6'">6</div>
+                <div class="btn" onclick="painel.txt.value+='7'">7</div>
+                <div class="btn" onclick="painel.txt.value+='8'">8</div>
+                <div class="btn" onclick="painel.txt.value+='9'">9</div>
+                <div class="btn" onclick="painel.txt.value=''">C</div>
+                <div class="btn" onclick="painel.txt.value+='0'">0</div>
+                <div class="btn" onclick="login()"><img src='../img/Imagens_Icones/enter.png'></div>
+            </div>
+        
+        </form>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>

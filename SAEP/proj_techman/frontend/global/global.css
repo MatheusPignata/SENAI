@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+:root{
+    --branco: #fff;
+    --cinza: #eeedeb;
+    --aqua-claro: #cce2ee;
+    --cinza-escuro: #b3b3b3;
+    --aqua: #44babc;
+    --aqua-escuro: #35797d;
+    --preto: #000;
+}
